@@ -24,7 +24,7 @@ def test_navigation_to_next_page(quotes_page):
     """Prueba que verifica la navegación a la página siguiente."""
     # Si tienes un método en `quotes_page` llamado `go_to_next_page`
     quotes_page.go_to_next_page()
-    assert "page=2" in quotes_page.driver.current_url, "La navegación a la siguiente página falló"
+    assert "page/2" in quotes_page.driver.current_url, "La navegación a la siguiente página falló"
 
 def test_quotes_content(quotes_page):
     """Prueba que verifica el contenido de una cita específica."""
